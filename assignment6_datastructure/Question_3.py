@@ -27,4 +27,6 @@ for i in range(num_of_country):
     country, capital = input(f"{i+1}. write ; country capital : ").split()
     list_of_country[country] = capital
 
-print(list_of_country[input("write the name of country : ")])
+# print(list_of_country[input("write the name of country : ")])
+
+print(list_of_country.get(input("write the name of country : "),'Unknown Country'))
